@@ -13,9 +13,21 @@ End-to-end ML project detecting fraudulent transactions with **95% recall**.
 
 1. Clone repo:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/credit-card-fraud-detection.git
+   git clone git clone https://github.com/Vidhigupta206/Credit-card-fraud-detection.git
    cd credit-card-fraud-detection
    ## Screenshots
+   
+2. Set up the Environment
+   python -m venv venv
+   venv\Scripts\activate  # Windows
+   # source venv/bin/activate  # Mac/Linux
+   pip install -r requirements.txt
+
+3. Run the server
+   uvicorn src.app:app --reload
+
+4. Open dashboard:
+   http://127.0.0.1:8000
 
 ### Legitimate Transaction
 ![Legitimate](<img width="1886" height="972" alt="Screenshot 2025-12-18 193342" src="https://github.com/user-attachments/assets/83b1b4f6-f11e-4bb7-af4d-fa4b48cfa9e7" />)
